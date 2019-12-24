@@ -1,68 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# github-finder-hooks
 
-## Available Scripts
+This is an application that queries the GitHub API and displays search results and information about individual users such as their username, profile picture, followers, and repositories. It is a tutorial app from Brad Traversy's UDEMY course, [Modern React Front to Back](https://www.udemy.com/course/modern-react-front-to-back/).
 
-In the project directory, you can run:
+Brad walked us through a step by step refactor of the [github-finder-props-state](https://github.com/sarahmattar/github-finder-props-state) version of the app, taking us from fetching data via a standard API call to GitHub, to creating an entire context for our API calls. It was an apples to apples refactor of props and state to hooks and context, which gave me a solid foundation on which to evaluate and compare the two. The final version is deployed on Netlify [here](https://practical-yalow-85010e.netlify.com/). 
 
-### `yarn start`
+### Technologies and APIs Used
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+GitHub API - querying GitHub users, user information, and repositories. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Create-React-App - a simple setup for scaffolding a React client. 
 
-### `yarn test`
+FontAwesome - a library of icons passed in as props and then embedded with [@FortAwesome's](https://github.com/@fortawesome) `<FontAwesomeIcon/>` component. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Netlify - a cloud based platform for app and website hosting. 
 
-### `yarn build`
+### Installation Instructions
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project uses Yarn for package management. To install dependencies, please run `yarn install`. 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+To launch the app in development mode , please run `yarn dev`. 
