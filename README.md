@@ -19,3 +19,13 @@ Netlify - a cloud based platform for app and website hosting.
 This project uses Yarn for package management. To install dependencies, please run `yarn install`. 
 
 To launch the app in development mode , please run `yarn dev`. 
+
+### Netlify Deployment Notes
+
+To keep Netlify deploys stable, this repo pins Node at the project level using `.nvmrc` and `netlify.toml`.
+
+If you change Node versions later, update both files together.
+
+This project also uses an explicit production `browserslist` in `package.json` to avoid Babel target resolution errors seen in CI (for example, invalid `opera_mobile` target failures).
+
+If Netlify still reports old runtime behavior after config updates, run a "Clear cache and deploy site" in Netlify.
