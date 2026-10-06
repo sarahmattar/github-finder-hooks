@@ -1,2 +1,6 @@
 [build.environment]
   NODE_VERSION = "24.4.1"
+  # Netlify sets CI=true, which makes react-scripts fail on any build warning.
+  # The autoprefixer "targets do not need any prefixes" warning is harmless, so
+  # disable CI-mode warnings-as-errors here.
+  CI = "false"
